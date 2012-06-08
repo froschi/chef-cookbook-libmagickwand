@@ -17,6 +17,12 @@ when "lucid"
   include_recipe "libxt"
 
   packages |= %w/libmagickwand2/
+when "lucid"
+  include_recipe "imagemagick-common"
+  include_recipe "libgomp"
+  include_recipe "libmagickcore"
+
+  packages |= %w/libmagickwand4/
 end
 
 packages.each do |pkg|

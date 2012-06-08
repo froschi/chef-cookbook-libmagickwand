@@ -7,6 +7,7 @@ version          "0.0.1"
 
 %w/ubuntu/.each { |os| supports os }
 
+depends          "imagemagick-common", ">= 0.0.1"
 depends          "libbz2", ">= 0.0.1"
 depends          "libfreetype", ">= 0.0.1"
 depends          "libgomp", ">= 0.0.1"
